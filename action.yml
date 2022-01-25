@@ -38,4 +38,4 @@ runs:
          # generate source coverage reports by running gcov
          gcov -o . $(git ls-files :*.c :*.cc :*.cpp :*.C) || :
 
-        shell: bash
+        shell: C:\cygwin64\bin\bash.exe --login -o igncr '{0}'
