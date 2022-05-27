@@ -1,7 +1,7 @@
 name: 'Process coverage data'
 description: 'Process coverage data'
-env:
-  CHERE_INVOKING: 1
+#env:
+#  CHERE_INVOKING: 1
 
 runs:
   using: "composite"
@@ -9,7 +9,7 @@ runs:
       - name: "Process coverage data"
         run: |
          set -ex
-         GAPROOT=${GAPROOT-$HOME/gap}
+         GAPROOT=${GAP_HOME}
 
          mkdir -p /tmp/gaproot/pkg/
          ln -f -s $PWD /tmp/gaproot/pkg/
